@@ -1,0 +1,29 @@
+GET http://localhost:3005/posts
+Authorization: Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGVlIiwiaWF0IjoxNjQ2MzAxMjYyLCJleHAiOjE2NDYzMDEyNzd9.dyWwsILckpftTbqbdu3i1p5FKOxtfeSV8sOM1IGTTytFarfQNry30l8_0lhf2vyC
+
+###
+
+POST http://localhost:3006/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGVlIiwiaWF0IjoxNjQ2MzAxMjYyfQ.s9p83uiXlw7qpuiGbLbSnMeS06FJhNr8lHE10gfKL6y1ffyiZDW9-FV21-BGSykX"
+}
+
+###
+
+POST http://localhost:3006/login
+Content-Type: application/json
+
+{
+  "username": "Lee"
+}
+
+###
+
+DELETE http://localhost:3006/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGVlIiwiaWF0IjoxNjQ2MzAxMjYyfQ.s9p83uiXlw7qpuiGbLbSnMeS06FJhNr8lHE10gfKL6y1ffyiZDW9-FV21-BGSykX"
+}
